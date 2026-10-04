@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Cloud URL Health Monitor – Requirements
+# Install with:  pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Web UI Framework
+gradio>=4.0.0
+
+# HTTP Requests (URL health checking)
+requests>=2.31.0
+
+# Data Manipulation & CSV Report Generation
+pandas>=2.0.0
+
+# Standard library (no install needed, listed for reference):
+# - urllib.parse  (URL validation)
+# - csv           (CSV helpers)
+# - os            (file & path operations)
+# - time          (response time measurement)
+# - datetime      (timestamps)
+# - json          (serialization)

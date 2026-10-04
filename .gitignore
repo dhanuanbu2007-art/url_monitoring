@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────
+#  .gitignore — Cloud URL Health Monitor
+#  Excludes build artifacts, secrets, virtual envs, and temp files
+# ─────────────────────────────────────────────────────────────────
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+virtualenv/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+config_local.py
+
+# Gradio temp files and flagged data
+flagged/
+gradio_cached_examples/
+*.gradio/
+
+# Generated CSV reports (runtime output — not source)
+url_health_report_*.csv
+batch_health_check.csv
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Logs
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
